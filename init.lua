@@ -1,1 +1,5 @@
-require("caolancode")
+require("caolancode.lazy")
+require("caolancode.core.keymaps")
+require("caolancode.core.options")
+require("caolancode.plugins.treesitter")
+require("caolancode.plugins.telescope")
