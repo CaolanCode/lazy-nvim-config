@@ -21,7 +21,7 @@ vim.g.maplocalleader = " "
 -- Normal
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-h>", "<C-w>j", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
@@ -64,7 +64,7 @@ keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts) -- list open buffe
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk fast to enter visual mode
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
