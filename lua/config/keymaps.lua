@@ -52,10 +52,6 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Plugins
-keymap("n", "<leader>sm", ":MaximizerToggle<CR>", opts) -- vim-maximizer
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts) -- file explorer
-
 -- telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts) -- find files within current working directory, respects .gitignore
 keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts) -- find string in current working directory as you type
