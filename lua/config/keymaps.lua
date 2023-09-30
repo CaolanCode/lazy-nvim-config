@@ -36,12 +36,6 @@ keymap("n", "<leader>sh", "<C-w>s", opts) -- split window horizontally
 keymap("n", "<leader>se", "<C-w>=", opts) -- make split window equal width
 keymap("n", "<leader>sx", ":close<CR>", opts) -- close current split window
 
--- tabs
-keymap("n", "<leader>to", ":tabnew<CR>", opts) -- open new tab
-keymap("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
-keymap("n", "<leader>tn", ":tabn<CR>", opts) -- go to next tab 
-keymap("n", "<leader>tp", ":tabp<CR>", opts) -- go to previous tab
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -51,13 +45,6 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
-
--- telescope
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts) -- find files within current working directory, respects .gitignore
-keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts) -- find string in current working directory as you type
-keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", opts) -- find string under cursor in current working directory
-keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts) -- list open buffers in current neovim instance
-keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
 
 -- Insert --
 -- Press jk fast to enter visual mode
