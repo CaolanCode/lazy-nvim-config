@@ -34,6 +34,8 @@ return {
           "bash",
           "lua",
           "gitignore",
+          "terraform",
+          "hcl",
         },
         context_commentstring = {
           enable = true,

@@ -34,6 +34,7 @@ return {
         "lua_ls",
         "emmet_ls",
         "prismals",
+        "terraformls",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -44,6 +45,7 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "eslint_d", -- js linter
+        "tflint", -- terraform linter
       },
     })
   end,
