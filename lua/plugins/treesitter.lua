@@ -36,6 +36,7 @@ return {
           "gitignore",
           "terraform",
           "hcl",
+          "rust",
         },
         context_commentstring = {
           enable = true,
