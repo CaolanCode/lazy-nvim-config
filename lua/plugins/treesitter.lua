@@ -37,6 +37,7 @@ return {
           "terraform",
           "hcl",
           "rust",
+          "cpp",
         },
         context_commentstring = {
           enable = true,
