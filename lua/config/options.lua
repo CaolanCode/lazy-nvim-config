@@ -1,6 +1,6 @@
 local opt = vim.opt -- for conciseness
 
--- line numbers 
+-- line numbers
 opt.relativenumber = true
 opt.number = true
 
@@ -25,7 +25,7 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
---backspace 
+--backspace
 opt.backspace = "indent,eol,start"
 
 -- clipboard
@@ -40,11 +40,9 @@ opt.iskeyword:append("-")
 
 -- search
 opt.hlsearch = false -- stop search highlight
-opt.incsearch = true -- incremental search 
+opt.incsearch = true -- incremental search
 
 -- lines above cursor
 vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
-
-
