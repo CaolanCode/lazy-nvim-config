@@ -77,6 +77,12 @@ return {
 			on_attach = on_attach,
 		})
 
+		-- configure angular server with plugin
+		lspconfig["angularls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure css server
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
