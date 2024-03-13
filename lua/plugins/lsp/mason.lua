@@ -29,7 +29,6 @@ return {
 				"tailwindcss",
 				"lua_ls",
 				"emmet_ls",
-				"terraformls",
 				"angularls",
 			},
 			-- auto-install configured servers (with lspconfig)
@@ -41,7 +40,6 @@ return {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"eslint_d", -- js linter
-				"tflint", -- terraform
 			},
 		})
 	end,

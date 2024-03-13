@@ -89,17 +89,11 @@ return {
 			on_attach = on_attach,
 		})
 
-		-- configure tailwindcss server
-		lspconfig["tailwindcss"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
 		-- configure emmet language server
 		lspconfig["emmet_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "scss" },
 		})
 
 		-- configure lua server (with special settings)

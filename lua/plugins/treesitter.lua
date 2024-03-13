@@ -25,13 +25,11 @@ return {
 					"javascript",
 					"typescript",
 					"tsx",
-					"yaml",
 					"html",
 					"css",
 					"bash",
 					"lua",
 					"gitignore",
-					"terraform",
 				},
 				context_commentstring = {
 					enable = true,
