@@ -65,39 +65,46 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		-- configure html server
-		lspconfig["html"].setup({
+		lspconfig.html.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		-- configure typescript server with plugin
-		lspconfig["tsserver"].setup({
+		lspconfig.tsserver.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		-- configure angular server with plugin
-		lspconfig["angularls"].setup({
+		lspconfig.angularls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		-- configure css server
-		lspconfig["cssls"].setup({
+		lspconfig.cssls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-		-- configure emmet language server
-		lspconfig["emmet_ls"].setup({
+		lspconfig.emmet_ls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "scss" },
 		})
 
+		lspconfig.clangd.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			filetypes = { "c", "cpp" },
+		})
+
+		lspconfig.rust_analyzer.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			filetypes = { "rust" },
+		})
+
 		-- configure lua server (with special settings)
-		lspconfig["lua_ls"].setup({
+		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			settings = { -- custom settings for lua

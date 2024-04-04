@@ -30,6 +30,8 @@ return {
 				"lua_ls",
 				"emmet_ls",
 				"angularls",
+				"rust_analyzer",
+				"clangd",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
