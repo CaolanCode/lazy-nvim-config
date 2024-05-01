@@ -25,10 +25,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>nh", ":nohl<CR>", opts)  -- clear search highlights
-keymap("n", "x", '"_x', opts)  -- don't yank deleted character
-keymap("n", "<leader>+", "C-a", opts)  -- increment number
-keymap("n", "<leader>-", "C-a", opts)  -- decrement number
+keymap("n", "<leader>nh", ":nohl<CR>", opts) -- clear search highlights
+keymap("n", "x", '"_x', opts) -- don't yank deleted character
+keymap("n", "<leader>+", "C-a", opts) -- increment number
+keymap("n", "<leader>-", "C-a", opts) -- decrement number
 
 -- split window
 keymap("n", "<leader>sv", "<C-w>v", opts) -- split window vertically
@@ -57,6 +57,9 @@ keymap("v", ">", ">gv", opts)
 
 -- keep yanked text
 keymap("v", "p", '"_dP', opts)
+
+-- Return to Explorer
+keymap("n", "<leader>pv", ":Explore<CR>", opts)
 
 -- Visual Block --
 -- Move text up and down
