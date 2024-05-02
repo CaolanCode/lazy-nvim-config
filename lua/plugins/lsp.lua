@@ -83,6 +83,7 @@ return {
 					"angularls",
 					"clangd",
 					"cssls",
+					"tailwindcss",
 				},
 				handlers = {
 					lsp_zero.default_setup,
