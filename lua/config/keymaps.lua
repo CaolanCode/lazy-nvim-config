@@ -58,6 +58,9 @@ keymap("v", ">", ">gv", opts)
 -- keep yanked text
 keymap("v", "p", '"_dP', opts)
 
+-- Return to Explorer
+keymap("n", "<leader>pv", ":Explore<CR>", opts)
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
