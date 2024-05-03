@@ -84,6 +84,8 @@ return {
 					"clangd",
 					"cssls",
 					"tailwindcss",
+					"html",
+					"emmet_ls",
 				},
 				handlers = {
 					lsp_zero.default_setup,
