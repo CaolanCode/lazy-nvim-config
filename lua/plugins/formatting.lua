@@ -15,6 +15,7 @@ return {
 				html = { { "prettierd", "prettier" } },
 				json = { { "prettierd", "prettier" } },
 				lua = { "stylua" },
+				-- cpp = { "clang-format" },
 			},
 
 			format_on_save = {

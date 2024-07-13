@@ -20,9 +20,7 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
-		dependencies = {
-			{ "L3MON4D3/LuaSnip" },
-		},
+		dependencies = { "L3MON4D3/LuaSnip" },
 		config = function()
 			-- Here is where you configure the autocompletion settings.
 			local lsp_zero = require("lsp-zero")
@@ -86,6 +84,7 @@ return {
 					"tailwindcss",
 					"html",
 					"emmet_ls",
+					"somesass_ls",
 				},
 				handlers = {
 					lsp_zero.default_setup,
@@ -93,6 +92,14 @@ return {
 						-- (Optional) Configure lua language server for neovim
 						local lua_opts = lsp_zero.nvim_lua_ls()
 						require("lspconfig").lua_ls.setup(lua_opts)
+					end,
+					clangd = function()
+						require("lspconfig").clangd.setup({
+							cmd = {
+								"clangd",
+								"--fallback-style=webkit",
+							},
+						})
 					end,
 				},
 			})
