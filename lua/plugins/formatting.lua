@@ -7,20 +7,23 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				typescript = { { "prettierd", "prettier" } },
-				typescriptreact = { { "prettierd", "prettier" } },
-				javascript = { { "prettierd", "prettier" } },
-				javascriptreact = { { "prettierd", "prettier" } },
-				css = { { "prettierd", "prettier" } },
-				html = { { "prettierd", "prettier" } },
-				json = { { "prettierd", "prettier" } },
 				lua = { "stylua" },
-				-- cpp = { "clang-format" },
+
+				javascript = { "prettierd", "prettier" },
+				javascriptreact = { "prettierd", "prettier" },
+				typescript = { "prettierd", "prettier" },
+				typescriptreact = { "prettierd", "prettier" },
+				css = { "prettierd", "prettier" },
+				html = { "prettierd", "prettier" },
+				json = { "prettierd", "prettier" },
+
+				cpp = { "clang-format" },
+				c = { "clang-format" },
 			},
 
 			format_on_save = {
 				lsp_fallback = true,
-				async = false,
+				stop_after_first = true,
 				timeout_ms = 1000,
 			},
 		})

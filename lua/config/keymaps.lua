@@ -26,9 +26,9 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>nh", ":nohl<CR>", opts) -- clear search highlights
-keymap("n", "x", '"_x', opts) -- don't yank deleted character
-keymap("n", "<leader>+", "C-a", opts) -- increment number
-keymap("n", "<leader>-", "C-a", opts) -- decrement number
+keymap("n", "<leader>x", '"_x', opts) -- don't yank deleted character
+keymap("n", "<leader>+", "<C-a>", opts) -- increment number
+keymap("n", "<leader>-", "<C-x>", opts) -- decrement number
 
 -- split window
 keymap("n", "<leader>sv", "<C-w>v", opts) -- split window vertically
@@ -47,7 +47,7 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
--- Press jk fast to enter visual mode
+-- Press jk fast to enter normal mode
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --

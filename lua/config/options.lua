@@ -25,8 +25,8 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
---backspace
-opt.backspace = "indent,eol,start"
+-- key mapping timeout
+opt.timeoutlen = 500
 
 -- clipboard
 opt.clipboard:append("unnamedplus")
@@ -43,6 +43,6 @@ opt.hlsearch = false -- stop search highlight
 opt.incsearch = true -- incremental search
 
 -- lines above cursor
-vim.opt.scrolloff = 8
+opt.scrolloff = 8
 
-vim.opt.updatetime = 50
+opt.updatetime = 50
